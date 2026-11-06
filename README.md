@@ -95,7 +95,7 @@ chip on a PC motherboard's **BIOS**: a small black 8-pin chip with the marking p
 **right next to the connector of the display ribbon cable (flex cable)**, to the right of the large square main chip
 (the ARK Micro AMT630A SoC).
 
-![Location of the P25Q20H flash chip next to the display flex connector](chip-location.jpg)
+<img width="1269" height="952" alt="chip-location" src="https://github.com/user-attachments/assets/f254a08c-85a3-4677-a0ab-ac0dd462a272" />
 
 * The red arrow in the photo points at the flash chip.
 * Pin 1 is marked by a round dot on the chip body (bottom-left corner in the photo). Align the programmer clip so that its
