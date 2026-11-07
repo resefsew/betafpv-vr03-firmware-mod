@@ -48,10 +48,11 @@ A small community modification for the **BETAFPV VR03** analog FPV goggles. It i
 | Red | below 3.55 V | below 3.10 V |
 
 > **Warning – Li-ion mode is entirely at your own risk.** The stock firmware beeps at 3.40 V; Li-ion mode moves the alarm
-> down to 2.85 V so that Li-ion cells can be used further. It is not known how the goggles (their regulators and any
-> hardware protection) behave at such a low voltage; in the author's tests the goggles were still working at 2.8 V, but that
-> says nothing about your unit. The mod does **not** add a low-voltage cut-off: deeply discharging a cell can damage it and is
-> a safety hazard. Use a protected cell/pack and watch the voltage yourself. The mode is saved; the default is LiPo.
+> down to 2.85 V so that Li-ion cells can be used further. The author does **not know at what voltage the voltage
+> regulator of your goggles will shut them down**, or how the goggles behave at such a low voltage. In the author's tests the
+> goggles were still working at 2.8 V, but that says nothing about your unit. The mod does **not** add a low-voltage
+> cut-off: deeply discharging a cell can damage it and is a safety hazard. Use a protected cell/pack and watch the voltage
+> yourself. The mode is saved; the default is LiPo.
 
 ### How to use the MOD SETTINGS menu
 
@@ -65,6 +66,8 @@ Open the menu with the button that is **farthest from your face**. It opens dire
   Picture menu
   EXIT
 ```
+<img width="1280" height="960" alt="Mod Settings" src="https://github.com/user-attachments/assets/eac4bfd4-92f8-4d98-a3d1-7c23aa9bfba4" />
+
 
 * Next-row key: move down. Centre key (OK) or left key: change the value. The key you used to open the menu does not change
   values.
@@ -111,7 +114,7 @@ chip on a PC motherboard's **BIOS**: a small black 8-pin chip with the marking p
 **right next to the connector of the display ribbon cable (flex cable)**, to the right of the large square main chip
 (the ARK Micro AMT630A SoC).
 
-![Location of the P25Q20H flash chip next to the display flex connector](chip-location.jpg)
+<img width="1269" height="952" alt="chip-location" src="https://github.com/user-attachments/assets/77c98100-24c7-407e-99f2-22e0e5c3742f" />
 
 * The red arrow in the photo points at the flash chip.
 * Pin 1 is marked by a round dot on the chip body (bottom-left corner in the photo). Align the programmer clip so that its
