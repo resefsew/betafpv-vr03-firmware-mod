@@ -276,11 +276,6 @@ original program are changed so that it jumps into this code at: the periodic ba
 low-battery beep call (honours the setting), and the picture menu's key handler and render function
 (adds the MOD SETTINGS page). Everything else reuses routines that already exist in the stock firmware.
 
-## Roadmap / ideas
-
-* Optional: configurable voltage thresholds for the colours.
-* Support more firmware builds / hardware revisions (send the build stamp in an issue).
-
 ## Credits
 
 Made by **Resefsew** with the help of **Claude** (Anthropic). Thanks to everybody who tests and reports problems.
