@@ -136,7 +136,7 @@ chip on a PC motherboard's **BIOS**: a small black 8-pin chip with the marking p
 5. **Download `vr03_mod.py`** from this repository and put it **in the same folder as your dump** (a 262144-byte `.bin` file).
 6. **Run the script**: `python3 vr03_mod.py` (Windows: `py vr03_mod.py`). It
    * finds your dump and checks that it is the supported stock firmware (it only looks at the program area, so your personal
-     settings such as channel, brightness or language do not matter and are not changed),
+     settings such as channel, brightness or language do not matter),
    * shows a warning that you must accept by typing `I AGREE`,
    * writes a **modified copy** named `<your file>_modded.bin`. Your original file is never touched.
 7. **Write the modified file**: in the programmer software choose **erase → write `*_modded.bin` → verify**. Verification
@@ -168,7 +168,7 @@ solder joint is the most common reason for a dead board after this procedure.
 
 ## What is known about the stock firmware
 
-These are the author's findings from static analysis of the dump (disassembly, strings) and from experiments with the patch.
+These are the findings from static analysis of the dump (disassembly, strings) and from experiments with the patch.
 Items marked *(inferred)* were not proven.
 
 ### Platform
@@ -262,12 +262,6 @@ with the same firmware build, while the settings sectors differ per user (channe
 * Other user-facing text: `Bad VTX signal`, `searching...`, `LOADING DVR...`, `Card Error`, `ROTATE`, `ZOOM`, `16:9` / `4:3`,
   and an "IR A/B" setting (`A:2.3M&2.8M` / `B:3.2M&3.8M`). The "snow" screen without signal is `COMD_RedrawSnow`.
 * An FM radio frequency table (87.7–89.1 MHz) is present (probably inherited from the generic SDK).
-
-### DVR
-
-The DVR recorder is a **separate module controlled over a serial (UART) link**. The ~10 s wait before recording starts (also
-stated in BETAFPV's documentation) is the start-up time of that module (card and file-system initialisation) and is not
-something the goggles' flash controls, so this mod cannot shorten it.
 
 ## How the mod works (short)
 
