@@ -52,6 +52,7 @@ Open the menu by **long-pressing the button that is farthest from your face** un
 * Next-row key: move down. Left / right keys: change the value. Centre key on a value: change it, on `Back`: return.
 * Every change is saved immediately.
 * `Back` returns to the normal picture menu.
+  
    <img width="1280" height="960" alt="Mod Settings" src="https://github.com/user-attachments/assets/04cbe195-2a78-4780-aade-85edebe8c4bf" />
 
 
